@@ -40,6 +40,24 @@ npm run dev
 
 Vite will start the project at `http://localhost:5173/`.
 
+## ⚙️ Folder Structure
+
+```
+📂 Notes-App
+├── 📁 src *(Source code directory)*
+│   ├── 📂 assets *(Images and icons)*
+│   ├── 📂 components *(Reusable UI components)*
+│   ├── 📂 layouts *(Main app pages and views)*
+│   ├── 📂 store *(Zustand store for managing state)*
+│   ├── 📄 App.css *(Global styles for the app)*
+│   ├── 📄 App.jsx *(Main entry component that renders the UI)*
+│   ├── 📄 main.jsx *(Renders the App component into the DOM)*
+│   ├── 📄 index.css *(Base styles for the application)*
+├── 📄 README.md *(Project documentation)*
+├── 📄 package.json *(Dependencies and scripts)*
+
+```
+
 ## 📸 Screenshots
 
 | Home Page                                            | Add Note                              |
@@ -51,25 +69,6 @@ Vite will start the project at `http://localhost:5173/`.
 | ![Notes App UI](screenshots/img5.jpg)                | ![Notes App UI](screenshots/img6.jpg) |
 | Notes are sorted with the latest date and time first |                                       |
 | ![Notes App UI](screenshots/img7.jpg)                |
-
-## ⚙️ Folder Structure
-
-```
-📂 Notes-App
-├── 📁 src
-│   ├── 📂 assets       # Images and icons
-│   ├── 📂 components   # Reusable UI components
-│   ├── 📂 layouts      # Main app pages
-│   ├── 📂 store        # Zustand store for managing state
-│   ├── App.css         # Main entry component
-│   ├── App.jsx         # Main entry component
-│   ├── main.jsx        # Renders the App component
-│   ├── index.css       # Renders the App component
-│   └── index.css       # Global styles
-├── 📄 README.md        # Project documentation
-├── 📄 package.json     # Dependencies and scripts
-
-```
 
 ## 🔥 Deployment
 
@@ -93,12 +92,8 @@ To deploy your app to **Netlify**, follow these steps:
 - 🔊 Voice-to-text notes
 - 📅 Note reminders and scheduling
 
-## Contributing
+## 🤝 Contributing
 
 **Contributions are welcome!** Feel free to **fork this repository** and submit a **pull request** if you’d like to improve the app! 🚀
-
-## License
-
-MIT License © 2025 Your Name
 
 Made with ❤️ by **Padam Gadshila** 🎯
