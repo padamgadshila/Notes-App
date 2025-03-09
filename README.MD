@@ -45,16 +45,16 @@ Vite will start the project at `http://localhost:5173/`.
 ```
 📂 Notes-App
 ├── 📁 src
-│   ├── 📂 assets       #Images and icons
-│   ├── 📂 components   #Reusable UI components
-│   ├── 📂 layouts      #Main app pages and views
-│   ├── 📂 store        #Zustand store for managing state
-│   ├── 📄 App.css      #Global styles for the app
-│   ├── 📄 App.jsx      #Main entry component that renders the UI
-│   ├── 📄 main.jsx     #Renders the App component into the DOM
-│   ├── 📄 index.css    #Base styles for the application
-├── 📄 README.md        #Project documentation
-├── 📄 package.json     #Dependencies and scripts
+│   ├── 📂 assets       # Images and icons
+│   ├── 📂 components   # Reusable UI components
+│   ├── 📂 layouts      # Main app pages and views
+│   ├── 📂 store        # Zustand store for managing state
+│   ├── 📄 App.css      # Global styles for the app
+│   ├── 📄 App.jsx      # Main entry component that renders the UI
+│   ├── 📄 main.jsx     # Renders the App component into the DOM
+│   ├── 📄 index.css    # Base styles for the application
+├── 📄 README.md        # Project documentation
+├── 📄 package.json     # Dependencies and scripts
 
 ```
 
