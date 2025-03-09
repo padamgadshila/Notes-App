@@ -108,7 +108,9 @@ export default function HomeLayout() {
               )}
               <div
                 onClick={() => navigate(`/view?id=${data.id}`)}
-                className="w-full flex items-center gap-4"
+                className={`${
+                  showSelection ? "w-[calc(100%-45px)]" : "w-full"
+                }  flex items-center gap-4`}
               >
                 <Notes
                   data={data}
