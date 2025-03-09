@@ -13,45 +13,40 @@ import toast, { Toaster } from "react-hot-toast";
 import { useNotes } from "../store/store";
 
 export default function HomeLayout() {
-  let notes = useNotes((state) => state.notes);
+  let notes = useNotes((state) => state.notes)
+    .slice()
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+
   let deleteNote = useNotes((state) => state.deleteNote);
   const navigate = useNavigate();
 
-  // State to track selected note IDs
   const [selectedNotes, setSelectedNotes] = useState([]);
 
-  // State to show/hide checkboxes
   const [showSelection, setShowSelection] = useState(false);
 
   console.log(selectedNotes);
 
-  // Check if all notes are selected
-  const allSelected = notes.length > 0 && selectedNotes.length === notes.length;
-
-  // Toggle select/unselect all notes
   const toggleAllNotes = () => {
     if (!showSelection) {
-      setShowSelection(true); // Enable selection mode
+      setShowSelection(true);
     }
   };
 
-  // Toggle individual note selection
   const toggleNoteSelection = (id) => {
     setSelectedNotes((prev) =>
       prev.includes(id) ? prev.filter((noteId) => noteId !== id) : [...prev, id]
     );
   };
 
-  // Close selection mode (reset everything)
   const closeSelectionMode = () => {
     setShowSelection(false);
     setSelectedNotes([]);
   };
 
   const deleteSelectedNotes = () => {
-    selectedNotes.forEach((id) => deleteNote(id)); // Delete selected notes
-    setSelectedNotes([]); // Clear selection
-    setShowSelection(false); // Immediately hide selection mode
+    selectedNotes.forEach((id) => deleteNote(id));
+    setSelectedNotes([]);
+    setShowSelection(false);
     toast.success("Deleted");
   };
 

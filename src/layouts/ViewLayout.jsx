@@ -40,7 +40,7 @@ export default function ViewLayout() {
       formik.setValues({
         title: current.title,
         content: current.content,
-        date: current.date,
+        date: new Date().toISOString(),
       });
     }
   }, [current]);

@@ -1,6 +1,31 @@
 import React from "react";
 
 export default function Notes({ data, status }) {
+  const formatDate = (dateString) => {
+    console.log(dateString);
+
+    const dateObj = new Date(dateString);
+    const now = new Date();
+
+    const isToday =
+      dateObj.getDate() === now.getDate() &&
+      dateObj.getMonth() === now.getMonth() &&
+      dateObj.getFullYear() === now.getFullYear();
+
+    if (isToday) {
+      return `Today at ${dateObj.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      })}`;
+    } else {
+      return dateObj.toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      });
+    }
+  };
   return (
     <div
       className={`${
@@ -11,7 +36,7 @@ export default function Notes({ data, status }) {
       <span className="text-xl inline-block w-full text-ellipsis whitespace-nowrap overflow-hidden">
         {data.content}
       </span>
-      <span className="text-sm">{data.date}</span>
+      <span className="text-sm">{formatDate(data.date)}</span>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function AddLayout() {
     initialValues: {
       title: "",
       content: "",
-      date: new Date().toISOString().split("T")[0],
+      date: new Date().toISOString(),
     },
     onSubmit: (values) => {
       const newId = count + 1;
