@@ -39,7 +39,7 @@ export default function AddLayout() {
             navigate("/");
           }}
         >
-          <FontAwesomeIcon className="text-xl text-amber-500" icon={faCheck} />
+          <FontAwesomeIcon className="text-xl text-green-500" icon={faCheck} />
         </button>
       </div>
 
