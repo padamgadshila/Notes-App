@@ -24,8 +24,6 @@ export default function HomeLayout() {
 
   const [showSelection, setShowSelection] = useState(false);
 
-  console.log(selectedNotes);
-
   const toggleAllNotes = () => {
     if (!showSelection) {
       setShowSelection(true);

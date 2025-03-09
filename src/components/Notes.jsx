@@ -2,8 +2,6 @@ import React from "react";
 
 export default function Notes({ data, status }) {
   const formatDate = (dateString) => {
-    console.log(dateString);
-
     const dateObj = new Date(dateString);
     const now = new Date();
 
