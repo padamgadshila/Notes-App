@@ -42,10 +42,15 @@ Vite will start the project at `http://localhost:5173/`.
 
 ## 📸 Screenshots
 
-| Home Page                                   | Add Note          |
-| ------------------------------------------- | ----------------- |
-| ![Notes App UI](https://your-image-url.com) | This is Home Page |
-| ![Notes App UI](https://your-image-url.com) | This is Home Page |
+| Home Page                                            | Add Note                              |
+| ---------------------------------------------------- | ------------------------------------- |
+| ![Notes App UI](screenshots/img1.jpg)                | ![Notes App UI](screenshots/img2.jpg) |
+| Page with notes added                                | Saved note with notification          |
+| ![Notes App UI](screenshots/img3.jpg)                | ![Notes App UI](screenshots/img4.jpg) |
+| Multi-selecting the notes                            | Selecting the note to delete          |
+| ![Notes App UI](screenshots/img5.jpg)                | ![Notes App UI](screenshots/img6.jpg) |
+| Notes are sorted with the latest date and time first |                                       |
+| ![Notes App UI](screenshots/img7.jpg)                |
 
 ## ⚙️ Folder Structure
 
