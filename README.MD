@@ -10,9 +10,9 @@ A simple and efficient Notes app built with modern web technologies to help user
 - 🔄 **Auto-Sorting** - Latest notes appear first.
 - 🎨 **Beautiful UI** - Built with Tailwind CSS for a sleek and responsive design.
 
-## 🎶 Demo
+## 🚀 Demo
 
-https://notes-app-by-padam.netlify.app/
+**[Notes App](https://notes-app-by-padam.netlify.app/)**
 
 ## 🛠️ Tech Stack
 
